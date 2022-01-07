@@ -13,6 +13,10 @@
 		711FCDE92777974E00DF86FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711FCDE72777974E00DF86FA /* Main.storyboard */; };
 		711FCDEB2777974E00DF86FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711FCDEA2777974E00DF86FA /* Assets.xcassets */; };
 		711FCDEE2777974E00DF86FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711FCDEC2777974E00DF86FA /* LaunchScreen.storyboard */; };
+		711FCDF6277797D600DF86FA /* UIRotaryControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FCDF5277797D600DF86FA /* UIRotaryControl.swift */; };
+		711FCDFA2777B31B00DF86FA /* bg_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 711FCDF82777B31B00DF86FA /* bg_big.png */; };
+		71FF6DE92778C7770047F48A /* bg_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FF6DE72778C7770047F48A /* bg_normal.png */; };
+		71FF6DEA2778C7770047F48A /* bg_bigger.png in Resources */ = {isa = PBXBuildFile; fileRef = 71FF6DE82778C7770047F48A /* bg_bigger.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		711FCDEA2777974E00DF86FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		711FCDED2777974E00DF86FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		711FCDEF2777974E00DF86FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711FCDF5277797D600DF86FA /* UIRotaryControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRotaryControl.swift; sourceTree = "<group>"; };
+		711FCDF82777B31B00DF86FA /* bg_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_big.png; sourceTree = "<group>"; };
+		71922EB72787712C008CB1BE /* UIRotaryControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UIRotaryControl.entitlements; sourceTree = "<group>"; };
+		71FF6DE72778C7770047F48A /* bg_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_normal.png; sourceTree = "<group>"; };
+		71FF6DE82778C7770047F48A /* bg_bigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bigger.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +49,9 @@
 		711FCDD52777974E00DF86FA = {
 			isa = PBXGroup;
 			children = (
+				711FCDF82777B31B00DF86FA /* bg_big.png */,
+				71FF6DE82778C7770047F48A /* bg_bigger.png */,
+				71FF6DE72778C7770047F48A /* bg_normal.png */,
 				711FCDE02777974E00DF86FA /* UIRotaryControl */,
 				711FCDDF2777974E00DF86FA /* Products */,
 			);
@@ -56,9 +68,11 @@
 		711FCDE02777974E00DF86FA /* UIRotaryControl */ = {
 			isa = PBXGroup;
 			children = (
+				71922EB72787712C008CB1BE /* UIRotaryControl.entitlements */,
 				711FCDE12777974E00DF86FA /* AppDelegate.swift */,
 				711FCDE32777974E00DF86FA /* SceneDelegate.swift */,
 				711FCDE52777974E00DF86FA /* ViewController.swift */,
+				711FCDF5277797D600DF86FA /* UIRotaryControl.swift */,
 				711FCDE72777974E00DF86FA /* Main.storyboard */,
 				711FCDEA2777974E00DF86FA /* Assets.xcassets */,
 				711FCDEC2777974E00DF86FA /* LaunchScreen.storyboard */,
@@ -126,8 +140,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				711FCDEE2777974E00DF86FA /* LaunchScreen.storyboard in Resources */,
+				711FCDFA2777B31B00DF86FA /* bg_big.png in Resources */,
+				71FF6DE92778C7770047F48A /* bg_normal.png in Resources */,
 				711FCDEB2777974E00DF86FA /* Assets.xcassets in Resources */,
 				711FCDE92777974E00DF86FA /* Main.storyboard in Resources */,
+				71FF6DEA2778C7770047F48A /* bg_bigger.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711FCDF6277797D600DF86FA /* UIRotaryControl.swift in Sources */,
 				711FCDE62777974E00DF86FA /* ViewController.swift in Sources */,
 				711FCDE22777974E00DF86FA /* AppDelegate.swift in Sources */,
 				711FCDE42777974E00DF86FA /* SceneDelegate.swift in Sources */,
@@ -217,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UIRotaryControl/UIRotaryControl.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JS6RLW7GU3;
@@ -304,6 +323,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gopikrishnan.rotary.UIRotaryControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UIRotaryControl/UIRotaryControl.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JS6RLW7GU3;
@@ -332,6 +353,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gopikrishnan.rotary.UIRotaryControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
